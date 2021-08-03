@@ -15,4 +15,5 @@ collatz(10)
 
 def mainFunc():
     print("What is your name?") 
-    print("My name is Fiifi") # Change this to your name
+    print("My name is Fiifi") 
+    # Change line 18 to print your name
