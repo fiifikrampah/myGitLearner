@@ -3,11 +3,11 @@ def collatz(num):
     while (num > 1):
         if num % 2 == 0:
             num = num / 2 
-            print(num)
+            return(num)
         # else num is odd
         else:
             num = (3 * num) + 1
-            print(num)
+            return(num)
 
 collatz(10)
 
@@ -17,3 +17,10 @@ def mainFunc():
     print("What is your name?") 
     print("My name is Fiifi") 
     # Change line 18 to print your name
+
+    # Call the collatz function with a value entered by the user
+    number = input("Enter a positive number: ")
+    result = collatz(int(number))
+    print(result)
+
+mainFunc()
