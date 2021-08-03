@@ -14,12 +14,8 @@ collatz(10)
 # Eddy complete the following code here:
 
 def mainFunc():
-    x=input("What is your name?")
-    
-    print(x) 
-
-    print("My name is " + x) 
-
+    name=input("What is your name?") 
+    print("Welcome" + name) 
 
     # Call the collatz function with a value entered by the user
     number = input("Enter a positive number: ")
