@@ -4,6 +4,8 @@ Simple program to compute the collatz conjecture of a given number.
 # Store the collatz numbers in a list
 steps = []
 
+# The app should only take positive numbers
+ 
 
 # Function to compute the collatz conjecture for a given number
 def collatz(num):
