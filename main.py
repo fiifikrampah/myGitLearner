@@ -8,23 +8,23 @@ steps_list = []
 
 # Function to compute the Collatz conjecture for a given number
 def collatz(number):
-    global steps
+    global steps_list
     # if number is even
     if number % 2 == 0:
         number = int(number / 2)
-        steps.append(number)
+        steps_list.append(number)
         collatz(number)
     # else if number is odd and not 1
     elif (number % 2 == 1) and (number != 1):
         number = int((3 * number) + 1)
-        steps.append(number)
+        steps_list.append(number)
         collatz(number)
     else:
         # end if number reaches 1
         print("The number has reached 1!")
         pass
     # return the number of steps
-    return len(steps)
+    return len(steps_list)
 
 
 def main():
