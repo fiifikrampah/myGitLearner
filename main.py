@@ -7,23 +7,24 @@ steps_list = []
 # The app should only take positive numbers
 
 # Function to compute the Collatz conjecture for a given number
-def collatz(input_num):
-    global steps_list
-    # if input_num is even
-    if input_num % 2 == 0:
-        input_num = int(input_num / 2)
-        steps_list.append(input_num)
-        collatz(input_num)
-    # else if input_num is odd and not 1
-    elif (input_num % 2 == 1) and (input_num != 1):
-        input_num = int((3 * input_num) + 1)
-        steps_list.append(input_num)
-        collatz(input_num)
+def collatz(number):
+    global steps
+    # if number is even
+    if number % 2 == 0:
+        number = int(number / 2)
+        steps.append(number)
+        collatz(number)
+    # else if number is odd and not 1
+    elif (number % 2 == 1) and (number != 1):
+        number = int((3 * number) + 1)
+        steps.append(number)
+        collatz(number)
     else:
-        # end if input_num reaches 1
+        # end if number reaches 1
+        print("The number has reached 1!")
         pass
-    # return the number of steps_list
-    return len(steps_list)
+    # return the number of steps
+    return len(steps)
 
 
 def main():
