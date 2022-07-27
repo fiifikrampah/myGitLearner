@@ -1,3 +1,3 @@
 # Git Practice
 
-This is just a test repo to learn git.
+Here is a repo to for practicing Git.
